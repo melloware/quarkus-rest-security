@@ -43,7 +43,7 @@ The application exposes the following REST endpoints with different authenticati
 | Authenticated Resource | `/api/authenticated` | Returns a message only for authenticated users. Shows basic authentication verification. | Any authenticated user regardless of role |
 | Secure Resource | `/api/secure` | Protected endpoint that returns sensitive data. Demonstrates role-based access control. | `API_ADMIN` or `API_USER` |
 | Admin Resource | `/api/admin` | Administrative endpoint for system management. Shows strict role-based authorization. | `API_ADMIN` only |
-| Token Resource | `/api/token` | Returns the current user's authentication token details. Useful for token inspection and validation. | Any authenticated user regardless of role |
+| Token Resource | `/api/playground` | Returns the current user's authentication token details. Useful for token inspection and validation. | Any authenticated user regardless of role |
 
 
 ## Users
