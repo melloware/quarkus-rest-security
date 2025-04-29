@@ -52,8 +52,8 @@ The application comes with two pre-configured users:
 
 | Username | Password | Roles |
 |----------|----------|-------|
-| alice | alice | API_ADMIN, API_USER |
-| bob | bob |  API_USER |
+| alice | alice | ADMIN, USER |
+| bob | bob |  USER |
 | chris | chris | REPORTER, CONSUMER |
 
 
