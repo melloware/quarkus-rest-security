@@ -4,6 +4,7 @@ import org.eclipse.microprofile.jwt.JsonWebToken;
 import org.eclipse.microprofile.openapi.annotations.tags.Tag;
 
 import io.quarkus.security.Authenticated;
+import jakarta.enterprise.inject.Instance;
 import jakarta.inject.Inject;
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.Path;
@@ -16,11 +17,11 @@ import jakarta.ws.rs.core.MediaType;
 public class TokenResource {
 
     @Inject
-    JsonWebToken jwt;
+    Instance<JsonWebToken> jwt;
 
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     public JsonWebToken playground() {
-        return jwt;
+        return jwt.get();
     }
 }
